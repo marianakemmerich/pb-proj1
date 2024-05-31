@@ -4,30 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rescue Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="navbar">
-    <header class="header">
-        <a class="logo"><img src="./assets/icons/logo.png" alt="Rescue Center logo">Rescue Center</a>
+    <div class="navigation">
+        <header class="header">
+            <a class="logo"><img src="./assets/icons/logo.png" alt="Rescue Center logo">Rescue Center</a>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Apply to adopt</a></li>
-                <li><a href="#">Volunteer</a></li>
-                <li><a href="#">Ways to give</a></li>
-                <li><a href="#">Events</a></li>
-            </ul>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Apply to adopt</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Ways to give</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
             
-        </nav>
+            </div>
 
-        <a><img src="./assets/icons/phone-icon.png" alt="Contact">631-249-7325</a>        
-        <button id="donate"><img src="./assets/icons/heart-icon.png">Donate</button>
-    </header>
+            <a><img src="./assets/icons/phone-icon.png" alt="Contact">631-249-7325</a>        
+            <button id="donate"><img src="./assets/icons/heart-icon.png">Donate</button>
+        </header>
 
-    <div class="divider"></div>
+        <div class="divider"></div>
     </div>
+
+    <section class="main-screen">
+        <div class="main-content">
+            <div class="info-block">
+                <div class="text-block">
+                    <h1>Forever Homes Shelter</h1>
+                    <p>Our mission is to rescue and provide rehabilitation to dogs and cats that are critically injured or neglected. 
+                    We have already saved the lives of 10,000 animals. We are not just a rescue, we are a refuge.</p>
+                </div>
+
+                <div class="cta-block">
+                    <h3>Your Gift Helps Save Lives</h3>
+                    <div class="button-group">
+                        <button id="donate"><img src="assets/icons/heart-icon.png">Donate</button>
+                        <button id="adopt"><img src="assets/icons/dog-icon.png">Apply to Adopt</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-img">
+                <img src="assets/images/image1.png" alt="">
+            </div>
+        </div>
+    </section>
 
 <script src="app.js"></script>
 </body>
