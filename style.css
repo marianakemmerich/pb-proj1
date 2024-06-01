@@ -169,18 +169,18 @@ a img {
 .text-block h1 {
     font-size: 64px;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 120%;
     text-align: left;
-    width: 584px;
     vertical-align: text-top;
     letter-spacing: -2px;
-    width: 584px;
 }
 
 .text-block p {
     font-size: 24px;
     font-family: 'Inter', sans-serif;
-    font-weight: medium;
+    font-weight: 500;
+    line-height: 160%;
     width: 584px;
     text-align: left;
     vertical-align: text-top;
@@ -228,6 +228,8 @@ a img {
     border: 2px solid #1e1f27;
     padding: 16px 32px;
     gap: 8px;
+    box-sizing: border-box;
+    white-space: nowrap;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -251,5 +253,279 @@ a img {
 
 .main-img img {
     height: 616px;
+    display: block;
+}
+
+/* STATS BLOCK */
+
+.stats-block {
+    width: 100%;
+    height: 924px;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #1e1f27;
+}
+
+.stats-content {
+    width: 1208px;
+    height: 764px;
+    padding: 0px;
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.text-info {
+    width: 1208px;
+    height: 358px;
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-info h2 {
+    color: #fff;
+    font-size: 56px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    vertical-align: text-top;
+    letter-spacing: -2px;
+}
+
+.stats {
+    width: 1208px;
+    height: 144px;
+    padding: 0px;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items :center;
+    position: relative;
+}
+
+.stats h3 {
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 1.28px;
+    color: #f8db46;
+}
+
+.stats p {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 160%;
+    text-align: center;
+    color: #fff;
+}
+
+.rescued .raised .found-home {
+    width: 376px;
+    height:144px;
+    padding: 0px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* DONATIONS BLOCK */
+
+.donations-block {
+    width: 100%;
+    height: 1117px;
+    padding: 80px 0 120px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    background: #1e1f27;
+}
+
+.donations-content {
+    width: 1208px;
+    height: 917px;
+    gap: 80px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.donations-content h2 {
+    color: #fff;
+    font-size: 56px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    vertical-align: text-top;
+    letter-spacing: -2px;
+}
+
+.cards {
+    width: 1208px;
+    height: 770px;
+    padding: 0px;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cards h3 {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: left;
+    vertical-align: text-top;
+    position: relative;
+}
+
+.cards h3 img {
     position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-text {
+    width: 100%;
+    padding-top: 24px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards p {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: light;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+}
+
+.first-row {
+    width: 1208px;
+    height: 355px;
+    padding: 0px;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.shelter {
+    width: 376px;
+    height: 355px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.vetting {
+    width: 376px;
+    height: 355px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.facilities {
+    width: 376px;
+    height: 355px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.second-row {
+    width: 1208px;
+    height: 355px;
+    padding: 0px;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.transport {
+    width: 376px;
+    height: 355px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fosters {
+    width: 376px;
+    height: 355px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.food {
+    width: 376px;
+    height: 355px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
