@@ -13,78 +13,91 @@ body {
 
 /* NAVIGATION BAR */
 
-li, a, button {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.navigation {
-    height: 120px;
-    width: 100%;
-    justify-content: space-between;
-    gap: 16px;
-}
-
 header {
-    position: relative;
+    background: #f5f5f5;
     width: 100%;
-    top: 0;
-    left: 0;
+    height: 120px;
+    padding: 0 116px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 116px;
-    z-index: 100;
+    position: relative;
 }
 
-header a {
-    color: #1e1f27;
-    text-align: left;
-    text-decoration: none;
-    white-space: nowrap;
+.navbar {
+    width: 1208px;
+    height: 64px;
+    gap: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar ul {
+.left-options {
+    width: 730px;
+    height: 60px;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotype {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-options ul {
     list-style: none;
+    width: 654px;
+    height: 32px;
+    gap: 20px;
     display: flex;
+    align-items: flex-start;
+}
+
+.left-options ul li a {
+    color: #1e1f27;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.right-options {
+    width: 391px;
+    height: 64px;
+    gap: 32px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.navbar li a {
-    transition: all 0.3s ease 0s;
-}
-
-.navbar li a:hover {
-    color: #ff3d9a;
-}
-
-.navbar li {
-    display: inline-block;
-    padding: 0px 20px;
-    white-space: nowrap;
-}
-
-.logo {
+.right-options a {
+    color: #1e1f27;
     font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 32px;
 }
 
-.logo img {
-    width: 45px;
-}
-
-a img {
-    width: 18px;
-    margin-right: 8px;
-    vertical-align: middle;
+.right-options a img {
+    margin-right: 10px;
 }
 
 #donate {
-    width: 177px;
+    width: 179px;
     height: 64px;
     color: #fff;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 32px;
     background-color: #ff3d9a;
     border: none;
     border-radius: 32px;
@@ -95,16 +108,12 @@ a img {
     align-items: center;
     position: relative;
     gap: 8px;
-    padding-left: 32px;
-    padding-right: 28px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
+    padding: 16px 32px;
 }
 
 #donate img {
     width: 23px;
-    margin-right: 8px;
+    margin-right: 5px;
     vertical-align: middle;
 }
 
@@ -433,7 +442,7 @@ a img {
     position: relative;
 }
 
-.shelter {
+.cards article {
     width: 376px;
     height: 355px;
     box-sizing: border-box;
@@ -443,20 +452,6 @@ a img {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.vetting {
-    width: 376px;
-    height: 355px;
-    box-sizing: border-box;
-    border: 2px solid #fff;
-    border-radius: 24px;
-    padding: 36px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -488,47 +483,6 @@ a img {
     position: relative;
 }
 
-.transport {
-    width: 376px;
-    height: 355px;
-    box-sizing: border-box;
-    border: 2px solid #fff;
-    border-radius: 24px;
-    padding: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.fosters {
-    width: 376px;
-    height: 355px;
-    box-sizing: border-box;
-    border: 2px solid #fff;
-    border-radius: 24px;
-    padding: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.food {
-    width: 376px;
-    height: 355px;
-    box-sizing: border-box;
-    border: 2px solid #fff;
-    border-radius: 24px;
-    padding: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
 /* ADOPT INFO BLOCK */
 

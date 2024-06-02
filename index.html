@@ -14,27 +14,27 @@
 </head>
 <body>
 
-    <div class="navigation">
-        <header class="header">
-            <a class="logo"><img src="./assets/icons/logo.png" alt="Rescue Center logo">Rescue Center</a>
-
-            <div class="navbar">
+    <header>
+        <div class="navbar">
+            <div class="left-options">
+                <img class="logotype" src="./assets/icons/logo.png">
                 <ul>
+                    <li><a>Rescue center</a></li>
                     <li><a href="#">Apply to adopt</a></li>
                     <li><a href="#">Volunteer</a></li>
                     <li><a href="#">Ways to give</a></li>
                     <li><a href="#">Events</a></li>
                 </ul>
-            
             </div>
 
-            <a><img src="./assets/icons/phone-icon.png" alt="Contact">631-249-7325</a>        
-            <button id="donate"><img src="./assets/icons/heart-icon.png">Donate</button>
-        </header>
-
-        <div class="divider"></div>
-    </div>
+            <div class="right-options">
+                <a><img src="./assets/icons/phone-icon.png">631-249-7325</a>        
+                <button id="donate"><img src="./assets/icons/heart-icon.png">Donate</button>
+            </div>            
+        </div>
+    </header>
     
+    <div class="divider"></div>
 
     <section class="main-screen">
         <div class="main-content">
@@ -93,7 +93,7 @@
             
             <div class="cards">
                 <div class="first-row">
-                    <article class="shelter">
+                    <article>
                         <div class="card-text">
                             <h3>Shelter <img src="assets/vectors/house-heart.png"></h3>
                             <p>We provide shelter for many of our cats and dogs. In addition to a roof over their heads, we pay for 
@@ -101,7 +101,7 @@
                         </div>
                     </article>
 
-                    <article class="vetting">
+                    <article>
                         <div class="card-text">
                             <h3>Vetting <img src="assets/vectors/green-cross.png"></h3>
                             <p>We provide vet care to our cats and dogs. We take care of general health assessments medications, 
@@ -109,7 +109,7 @@
                         </div>
                     </article>
 
-                    <article class="facilities">
+                    <article>
                         <div class="card-text">
                             <h3>Facilities <img src="assets/vectors/blue-building.png"></h3>
                             <p>We currently utilize a facility in a dilapidated state, which has necessitated significant investments to 
@@ -119,7 +119,7 @@
                 </div>
 
                 <div class="second-row">
-                    <article class="transport">
+                    <article>
                         <div class="card-text">
                             <h3>Transport <img src="assets/vectors/pet-carrier.png"></h3>
                             <p>Each year, we transport over 600 dogs and 350 cats from kill shelters and emergency distressing situations 
@@ -127,7 +127,7 @@
                         </div>                    
                     </article>
 
-                    <article class="fosters">
+                    <article class>
                         <div class="card-text">
                            <h3>Fosters <img src="assets/vectors/smile.png"></h3>
                             <p>We're lucky to have a group of individuals who generously foster our cats and dogs in their homes. We 
@@ -135,7 +135,7 @@
                         </div>                     
                     </article>
 
-                    <article class="food">
+                    <article>
                         <div class="card-text">
                            <h3>Food <img src="assets/vectors/bone3.png"></h3>
                             <p>Each year, we nourish our  cats and dogs with over 2,200 cans of wet food and 1,600 pounds of dry food to 
@@ -172,7 +172,7 @@
                         </ul> 
                     </div>
                     
-                    <button>Apply to Adopt</button>
+                    <button id="apply-adopt">Apply to Adopt</button>
                 </article>
             </div>
         </div>
@@ -214,7 +214,6 @@
             </div>
         </div>
     </section>
-
 
 <script src="app.js"></script>
 </body>
