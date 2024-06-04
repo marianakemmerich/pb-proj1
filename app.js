@@ -4,6 +4,7 @@ const applyToAdoptButton = document.querySelector('#apply-to-adopt')
 const adoptModal = document.querySelector('.adopt-modal')
 const cancelButton = document.querySelector('#cancel')
 const donateButton = document.querySelector('#donate')
+const donateBtn = document.querySelector('.donate')
 const donateModal = document.querySelector('.donate-modal')
 const cancelDonationButton = document.querySelector('#cancel-donation')
 
@@ -31,7 +32,19 @@ cancelDonationButton.onclick = function() {
     donateModal.close()
 }
 
+donateBtn.onclick = function() {
+    donateModal.showModal()
+}
+
 document.getElementById('wanna-adopt').addEventListener('click', function() {
+    window.location.href = './adoptables-page.html'
+})
+
+document.getElementById('view-adoptables-card').addEventListener('click', function() {
+    window.location.href = './adoptables-page.html'
+})
+
+document.getElementById('view-adoptables').addEventListener('click', function() {
     window.location.href = './adoptables-page.html'
 })
 
