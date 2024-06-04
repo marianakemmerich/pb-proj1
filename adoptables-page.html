@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="style/header-footer-style.css">
     <link rel="stylesheet" href="style/adoptables-style.css">
+    <link rel="stylesheet" href="style/modal-style.css">
 </head>
 <body>
 
@@ -147,6 +148,45 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <dialog class="donate-modal">
+        <h1>Choose your Donate</h1>
+        <div class="donate-form">
+            <div class="email">
+                <form action="submit">
+                    <label for="email">Email<span class="required">*</span></label></br>
+                    <input type="email" id="email">
+                </form>
+            </div>
+
+            <div class="donation">
+                <form action="submit">
+                    <label for="donation">How much can you help?<span class="required">*</span></label></br>
+                    <input type="text" id="donation">
+                </form>
+            </div>
+
+            <div class="payment-method">
+                    <label>Payment Method<span class="required">*</span></label></br>
+                    <div class="payment">
+                        <div class="pix">
+                            <label for="pix">Pix</label>
+                            <input type="radio" id="pix">
+                        </div>
+                        <div class="credit-card">
+                            <label for="credit-card">Credit Card</label>
+                            <input type="radio" id="credit-card">
+                        </div>
+                        <div class="paypal">
+                            <label for="paypal">Paypal</label>
+                            <input type="radio" id="paypal"> 
+                        </div>
+                    </div>
+            </div>
+            <button id="help"><img src="assets/icons/heart-icon.png">I wanna help!</button>
+            <button id="cancel-donation"><img src="assets/icons/back-arrow.png">Cancel</button>
+        </div>
+    </dialog>
+
+    <script src="adoptables.js"></script>
 </body>
 </html>
