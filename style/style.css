@@ -664,10 +664,8 @@ body {
     gap: 60px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .adopt-block article h2 {
@@ -692,11 +690,23 @@ body {
     text-align: center;
 }
 
+.adopt-block article div {
+    width: 1208px;
+    height: 64px;
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 70px;
+}
+
 .adopt-block article button {
     width: 238px;
     height: 64px;
     padding: 16px 32px;
     gap: 8px;
+    border: none;
     border-radius: 32px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;

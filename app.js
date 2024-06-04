@@ -51,3 +51,7 @@ document.getElementById('view-adoptables').addEventListener('click', function() 
 document.getElementById('help').addEventListener('click', function() {
     window.location.href = './success-page.html'
 })
+
+document.getElementById('subscription').addEventListener('click', function() {
+    window.location.href = './success-page.html'
+})
