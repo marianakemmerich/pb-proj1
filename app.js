@@ -34,3 +34,7 @@ cancelDonationButton.onclick = function() {
 document.getElementById('wanna-adopt').addEventListener('click', function() {
     window.location.href = './adoptables-page.html'
 })
+
+document.getElementById('help').addEventListener('click', function() {
+    window.location.href = './success-page.html'
+})
