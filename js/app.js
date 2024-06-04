@@ -52,6 +52,33 @@ document.getElementById('help').addEventListener('click', function() {
     window.location.href = './success-page.html'
 })
 
-document.getElementById('subscription').addEventListener('click', function() {
-    window.location.href = './success-page.html'
+const carousel = document.querySelector('.carousel')
+const arrowBtns = document.querySelectorAll('.wrapper button')
+const firstCardWidth = carousel.querySelector('.card').offsetWidth
+const carouselChildrens = [...carousel.children]
+
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth)
+
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML('afterbegin', card.outerHTML)
 })
+
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML('beforeend', card.outerHTML)
+})
+
+arrowBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        carousel.scrollLeft += btn.id === 'left' ? -firstCardWidth : firstCardWidth
+    })
+})
+
+const infiniteScroll = () => {
+    if(carousel.scrollLeft === 0){
+        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth)
+    } else if (carousel.scrollLeft === carousel.scrollWidth - carousel.offsetWidth){
+        carousel.scrollLeft = carousel.offsetWidth
+    }
+}
+
+carousel.addEventListener('scroll', infiniteScroll)
