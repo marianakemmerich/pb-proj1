@@ -1,0 +1,415 @@
+dialog {
+    background: #fff;
+    padding: 32px;
+    gap: 48px;
+    border-radius: 32px;
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ADOPT MODAL */
+
+.adopt-modal {
+    width: 448px;
+    height: 686px;
+}
+
+.modal-title {
+    width: 384px;
+    height: 86px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-title h1 {
+    color: #1e1f27;
+    font-size: 48px;
+    padding-bottom: 4px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+}
+
+.modal-title p {
+    color: #1e1f27;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+.form {
+    width: 384px;
+    height: 488px;
+    gap: 24px;
+    padding: 0;
+    top: 166px;
+    left: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.form div {
+    width: 100%;
+    height: 80px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.email, .full-name, .date label {
+    color: #ff3d9a;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.required {
+    color: #3f96fc;
+}
+
+.form div input {
+    background: transparent;
+    width: 384px;
+    height: 56px;
+    padding: 16px;
+    gap: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+}
+
+.form .email input {
+    border: 1px solid #937aff;
+}
+
+.form .full-name input {
+    border: 1px solid #3f96fc;
+}
+
+.date {
+    width: 100%;
+    height: 80px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label-dob {
+    width: 94px;
+    height: 16px;
+}
+
+.date div {
+    width: 384px;
+    height: 56px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.date div button {
+    background: transparent;
+    width: 122.67px;
+    height: 56px;
+    padding: 16px;
+    gap: 8px;
+    box-sizing: border-box;
+    border: 1px solid #3f96fc;
+    border-radius: 8px;
+    align-items: center;
+    color: #37383f;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date div button img {
+    width: 8px;
+    height:4.94px;
+    margin-top: 5.53px;
+    margin-left: 4px;
+}
+
+.agree-buttons {
+    width: 384px;
+    height: 176px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms {
+    width: 384px;
+    height: 24px;
+    gap: 12px;
+    align-items: center;
+}
+
+.agree-label {
+    color: #1e1f27;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.agree-pink {
+    color: #ff3d9a;
+}
+
+#agree {
+    display: none;
+}
+
+#agree + label:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 0;
+    background: #37383f;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#agree:checked + label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background: #04c27f;
+    background-position: center;
+    border: none;
+    padding:0;
+}
+
+.agree {
+    color: #1e1f27;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.agree-highlight {
+    color: #3f96fc;
+}
+
+.agree-buttons button {
+    width: 384px;
+    height: 64px;
+    padding: 16px 24px;
+    gap: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#wanna-adopt {
+    background: #04c27f;
+}
+
+#cancel {
+    background: #37383f;
+}
+
+/* DONATE MODAL */
+
+.donate-modal {
+    width: 480px;
+    height: 716px;
+}
+
+.donate-modal h1 {
+    color: #1e1f27;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    display: inline-block;
+}
+
+.donate-form {
+    width: 416px;
+    height: 488px;
+    padding: 32px 16px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.email {
+    width: 416px;
+    height: 80px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.email input {
+    background: transparent;
+    width: 416px;
+    height: 56px;
+    padding: 16px;
+    gap: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #937aff;
+    display: flex;
+}
+
+.donation label {
+    color: #ff3d9a;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.donation input {
+    background: transparent;
+    width: 416px;
+    height: 56px;
+    padding: 16px;
+    gap: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #3f96fc;
+    display: flex;
+}
+
+.payment-method {
+    width: 416px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.payment-method label {
+    color: #ff3d9a;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.payment {
+    width: 416px;
+    height: 80px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.payment label {
+    color: #1e1f27;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    align-self: flex-start;
+    text-transform: capitalize;
+}
+
+.payment input {
+    padding: 4px;
+}
+
+.pix, .paypal {
+    background: transparent;
+    width: 133.33px;
+    height: 56px;
+    padding: 16px;
+    gap: 8px;
+    top: 12px;
+    box-sizing: border-box;
+    border: 1px solid #3f96fc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.credit-card {
+    background: transparent;
+    width: 133.33px;
+    height: 80px;
+    padding: 16px;
+    gap: 8px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+    border: 1px solid #3f96fc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+}
+
+.donate-form button {
+    height: 64px;
+    padding: 16px 32px;
+    gap: 8px;
+    border: none;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+#help {
+    background: #ff3d9a;
+    width: 249px;
+}
+
+#cancel-donation {
+    background: #37383f;
+    width: 177px;
+}

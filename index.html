@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header-footer-style.css">
+    <link rel="stylesheet" href="style/modal-style.css">
 </head>
 <body>
 
@@ -296,9 +298,91 @@
             <div class="footer-text">
                 <p>We are not just a rescue, <span class="pink-highlight">we are a refuge</span></p>
             </div>
-
         </div>
     </footer>
+
+    <dialog class="adopt-modal">
+        <div class="modal-title">
+            <h1>Apply to Adopt</h1>
+            <p>Small text description can go here</p>
+        </div>
+    
+        <div class="form">
+            <div class="email">
+                <form action="submit">
+                    <label for="email">Email<span class="required">*</span></label></br>
+                    <input type="email" id="email">
+                </form>
+            </div>
+            
+            <div class="full-name">
+                <form action="submit">
+                    <label for="full-name">Full name<span class="required">*</span></label></br>
+                    <input type="text" id="full-name">
+                </form>
+            </div>
+
+            <div class="date">
+                <div class="label-dob">
+                    <label for="date-selector">Date of birth <span class="required">*</span></label></br>
+                </div>
+
+                <div>
+                    <button>Day <img src="assets/icons/arrow-down.png"></button>
+                    <button>Month <img src="assets/icons/arrow-down.png"></button>
+                    <button>Year <img src="assets/icons/arrow-down.png"></button>
+                </div>
+            </div>
+
+            <div class="agree-buttons">
+                <div class="terms">
+                    <input type="checkbox" id="agree">
+                    <label for="agree" class="agree-label">I agree with <span class="agree-pink">Privacy Policy</span> and <span class="agree-pink">Terms of Condition</span></label>
+                </div>
+                <button id="wanna-adopt"><img src="assets/icons/white-dog-icon.png">I wanna Adopt!</button>
+                <button id="cancel"><img src="assets/icons/back-arrow.png">Cancel</button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="donate-modal">
+        <h1>Choose your Donate</h1>
+        <div class="donate-form">
+            <div class="email">
+                <form action="submit">
+                    <label for="email">Email<span class="required">*</span></label></br>
+                    <input type="email" id="email">
+                </form>
+            </div>
+
+            <div class="donation">
+                <form action="submit">
+                    <label for="donation">How much can you help?<span class="required">*</span></label></br>
+                    <input type="text" id="donation">
+                </form>
+            </div>
+
+            <div class="payment-method">
+                    <label>Payment Method<span class="required">*</span></label></br>
+                    <div class="payment">
+                        <div class="pix">
+                            <label for="pix">Pix</label>
+                            <input type="radio" id="pix">
+                        </div>
+                        <div class="credit-card">
+                            <label for="credit-card">Credit Card</label>
+                            <input type="radio" id="credit-card">
+                        </div>
+                        <div class="paypal">
+                            <label for="paypal">Paypal</label>
+                            <input type="radio" id="paypal"> 
+                        </div>
+                    </div>
+            </div>
+            <button id="help"><img src="assets/icons/heart-icon.png">I wanna help!</button>
+            <button id="cancel-donation"><img src="assets/icons/back-arrow.png">Cancel</button>
+        </div>
+    </dialog>
 
 <script src="app.js"></script>
 </body>
